@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-color:#222222;
+	font-family:Sans-serif, Arial;
+	margin:0;
+	background-image: url(../imagenes/Bar.png);
+	background-repeat: repeat-x;	
+}
+A:link   {
+	font-weight:400;
+	text-decoration:none;
+	color:#12172C;
+	font-weight:bold;
+	font-size:13px;
+	font-family: Sans-serif, Arial;
+	text-shadow: 1px 1px #FFFFFF;
+}
+A:active {
+	color:#12172C;
+	font-weight:400;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:13px;
+	font-family: Sans-serif, Arial;
+	text-shadow: 1px 1px #FFFFFF;
+}
+A:visited {
+	font-variant:normal;
+	color:#12172C;
+	font-weight:400;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:13px;
+	font-family: Sans-serif, Arial;
+	text-shadow: 1px 1px #FFFFFF;
+}
+A:hover {
+	color:#00C;
+	font-variant:normal;
+	font-weight:400;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:13px;
+	font-family: Sans-serif, Arial;
+	text-shadow: 1px 1px #FFFFFF;
+}
+.FondoLogin{	
+	/*background-color:#222222;*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#4A5E58), to(#151515));
+	background: -moz-linear-gradient(top,  #4A5E58,  #151515);
+	background: -o-linear-gradient(top,  #4A5E58,  #151515);
+	background: -ms-linear-gradient(top,  #4A5E58,  #151515);
+}
+html, body {
+	height:100%;
+}
+body, td {
+	font-size:9pt;
+}
+.panel {
+	background-color:#D6D6D6;
+}
+.out {
+	background-color:#D6D6D6;
+	color:MenuText;
+	border: 1px outset #FFFFFF;
+}
+.BarraMenu, .MenuBarSubmenuVisible {
+	background-color:#4A5E58;
+	color:#FFF;
+}
+.pqz {
+	font-size:17pt;
+}
+.HeadTab {
+	height:22px;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	font-size:9pt;
+}
+
+
+.Toolbar {
+	float:left;
+	color:#000;
+	text-align:center;
+	cursor:pointer;
+	margin:1px;
+	padding:4px;
+	font-size:11pt;
+	/*font-weight:bold;*/
+}
+.Toolbar:hover {
+	color:#666;
+	background-color:#ffffef;
+
+}
+
+
+.LogoEsquina{
+	background-image: url(../ImgSys/logo_esquina_izGX.png);
+	background-repeat: repeat-x;
+	width:120px;
+	height:26px;
+	float:left;
+	}
+.BodyTab {
+	overflow:auto;
+	width:40%;
+	background-color:#F5F4EF;
+	border-color:#FFF #666 #666 #FFF;
+	border-style:solid;
+	border-width:1px;
+}
+input:focus, select:focus {
+	/*border:0px dotted #000;*/
+	background-color:#7A8CE0;
+	border-color:#7A8CE0;
+}
+.tablax{
+color:#12172C;
+}
+.cat{
+    background: white;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    box-shadow: rgba(0,0,0,0.8) 0px 5px 15px;
+    -webkit-box-shadow: rgba(0,0,0,0.8) 0px 5px 15px;
+    margin: 0.5em auto;
+    padding: 0.5em;
+    width: 90%;
+}
+ul    { border:0; margin:0; padding:0; }
+#paginacion                  { margin: 0 auto;}
+#pagination-digg li          { 
+border:0; 
+margin:0 auto; 
+padding:0; 
+font-size:15px; 
+list-style:none; /* savers */  
+float:left; 
+}
+    #pagination-digg a       
+	{ 
+	border:solid 1px  #9aafe5; 
+	margin-right:6px; 
+	background:#2F4579; 
+	color:#000;
+	}
+#pagination-digg .active     { 
+background:#FFFFFF; 
+font-weight:bold; 
+display:block; 
+float:left;  
+margin-right:6px; 
+}
+#pagination-digg a:link,
+#pagination-digg a:visited   { 
+color:#000;
+display:block; 
+float:left; 
+padding:3px 8px; 
+text-decoration:none; 
+}
+#pagination-digg a:hover     { color:#0e509e;border:solid 1px #0e509e; }

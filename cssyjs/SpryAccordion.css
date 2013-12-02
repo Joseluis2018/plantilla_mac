@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/* SpryAccordion.css - version 0.4 - Spry Pre-Release 1.6.1 */
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+/* Aquí se define el estilo de para el contenedor del Accordion. Como estilo
+ * predeterminado, se dibujan bordes por la izquierda, derecha y abajo. El borde
+ * de la parte de arriba se define por el primer panel en AccordionPanelTab, que 
+ * es el de mero arriba, el que nunca se mueve.
+ */
+.Accordion {
+	border-left: solid 1px gray;
+	border-right: solid 1px black;
+	border-bottom: solid 1px gray;
+	/*overflow: hidden; 
+	height: 90%;
+	width: 90%*/
+	
+	
+}
+
+/* Aquí se define el AccordionPanel, es decir el panel que contiene todas
+ * las cosas que ponemos. Aunque no tiene ningún aspecto gráfico
+ * es necesario dejarlo en claro que  debe de tener 0 en margin y padding.
+ */
+.AccordionPanel {
+	margin: 0px;
+	padding: 0px;
+
+}
+
+/* Aquí se define el AccordionPanelTab, la pestaña que lleva el título
+ * del panel y donde se detecta el click para abrir cualquier panel.
+ */
+.AccordionPanelTab {
+	background-color: #23345A;  /* Color de el panel siempre*/
+	border-top: solid 1px black;
+	border-bottom: solid 1px gray;
+	margin: 1px;
+	padding: 6px;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	font-size: 13px;
+}
+
+/* Aquí se define el AccordionPanelContent, donde se encuentra el contenido del panel.
+ * Es importante saber que no se debe de poner ningún padding nunca al area que 
+ * del contenido del panel para usar las animaciones. Siempre se debe de poner 0px
+ * de padding, porque si no la altura de los paneles se cambian al animarse la expansión.
+ * 
+ * Cualquiera que estilize un acordion, debe de establecer la altura en el 
+ * contenedor con la clase "AccordionPanelContent"
+ */
+.AccordionPanelContent {
+	overflow: auto;
+	margin: 0px;
+	padding: 0px;
+	height: 300px;
+	color: #000;
+	font-size: 15px;
+	
+}
+
+/* Este es un ejemplo de como cambiar la apariencia de la pestaña de un panel abierto.
+ * La clase "AccordionPanelOpen" es agregada y removida a el panel según el usuario
+ * haga click sobre la pestaña del acordion.
+ */
+.AccordionPanelOpen .AccordionPanelTab {
+	background-color:#000; /* Color de el panel seleccionado sacando el mouse*/
+	font-size: 14px;
+}
+
+/* Este es un ejemplo de como cambiar la apariencia de la pestaña del panel cuando 
+ * el mouse se coloca sobre ella. El nombre de clase "AccordionPanelTabHover" es
+ * agregada y removida de forma programada a las pestañas del panel en mientras el mouse
+ * haya abierto un panel. En este caso, yo configuré la CSS a mi gusto, y deje el mismo
+ * color(#CCC) para el panel abierto al hacerle over, que a los que quedan cerrados; 
+ * pero si lo deseas puedes optar por cambiarlo.
+ */
+.AccordionPanelTabHover {
+	color: #FFF;
+	background-color: #121B2E;
+	
+}
+.AccordionPanelOpen .AccordionPanelTabHover {
+	color: #FFF;
+	
+	
+}
+
+/* Este es un ejemplo de como personalizar la apariencia de todas las pestañas del panel
+/* mientras estemos enfocados en el Accordion. La clase "AccordionFocused" es agregada
+/* y removida de forma programada al Accordion al detectarse que se use o no.
+/* En esta ocasion también puse el mismo color(#333) al estar usandose o no el acordion. 
+/* pero si lo deseas puedes cambiarlo.
+ */
+.AccordionFocused .AccordionPanelTab {
+	background-color: #23345A; /* Color de el panel no seleccionado poniendo el mouse*/
+}
+
+/* Este es un ejemplo de como puede cambiarse la apariencia de la pestaña de panel que esta
+/* abierto mientras el panel este en uso.
+ * Por cuestion de gustos también deje el color (#666) igual al estar en uso el acordeon y 
+ * al no estarlo
+ */
+.AccordionFocused .AccordionPanelOpen .AccordionPanelTab {
+	background-color: #000;/* Color de el panel sombreado*/
+}

@@ -1,0 +1,4 @@
+localhost
+usuariobd
+passwordbd
+bd

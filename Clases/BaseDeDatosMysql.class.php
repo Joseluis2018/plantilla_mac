@@ -2,7 +2,7 @@
 /****************************************************************************
  * 
  * BaseDeDatosMysql.class.php
- * **
+ * ***
  * Autor:					Miguel Angel Cotrina
  * Fecha de Creacion:		10 de junio del 2010
  * Ultima actualizacion:	27 de enero del 2011
